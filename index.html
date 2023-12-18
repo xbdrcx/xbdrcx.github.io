@@ -1,25 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Cruz</title>
-</head>
-<body>
+<html>
 
-    <div class="container">
-        <h4>Welcome</h4>
-        <div class="column">
-        </div>
-        <div class="column">
-          <h2> second column </h2>
-          <p> This is second column of our grid system</p>
-        </div>
-        <div class="column">
-        </div>
-     </div>
+    <head>
+        <link rel="stylesheet" href="my.css">
+        <link rel="icon" type="image/x-icon" href="content/favicon.ico">
+        <title>Bruno Cruz</title>
+    </head>
 
-</body>
+    <body class="main" style="display: none;">
+
+        <div id="strip_container"></div>
+
+        <div class="row pane" id="main-pane">
+            <div class="column left">
+                <div class="main_menu">
+                    <a id="indexAnchor" class="welcome" onclick="ChangeArea(index)">BC</a>
+                    <div class="menu">
+                        <a id="aboutAnchor" href="#" onclick="ChangeArea(about, aboutAnchor)">about</a><br>
+                        <a id="projectsAnchor" href="#" onclick="ChangeArea(projects, projectsAnchor)">projects</a><br>
+                    </div>
+                    <div class="socials">
+                        <a href="mailto:freelancework.bc@gmail.com" target="_blank"><img src="content/email.png"></a>
+                        <a href="https://linkedin.com/in/xbrunocruzx" target="_blank"><img src="content/linkedin.png"></a>
+                        <a href="https://github.com/xbdrcx" target="_blank"><img src="content/github.png"></a>
+                        <a href="https://twitter.com/xbdrcx" target="_blank"><img src="content/twitter.png"></a>
+                    </div>
+                    <div class="lang">
+                        <a href="#" onclick="TurnOnOffBackground()" id="onoff_background">Background OFF</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column middle">
+
+                <div class="area" id="index" style="display: inline;">
+                </div>
+
+                <div class="area" id="about">
+                    <div class="area-content">
+                        <h2>I'm Bruno Cruz.</h2>
+                        <hr/>
+                        <p>This is a paragraph test in the About area of this website.</p>
+                    </div>
+                </div>
+
+                <div class="area" id="projects">
+                    <div class="area-content">
+                        <h2>Projects I've Worked/Im Working On</h2>
+                        <hr/>
+                        <p>This is a paragraph test in the About area of this website.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="column right">
+
+            </div>
+
+            <div class="collumn quote-container" style="color: white; font-family: sans-serif;">
+                <text id="quote-text"></text>
+                <text id="quote-author"></text>
+            </div>
+
+        </div>
+
+    </body>
+
 </html>
+
+<script src="my.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
