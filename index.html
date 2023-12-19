@@ -1,72 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Cruz</title>
+</head>
+<body class="noselection">
+    
+    <div id="background">
+    </div>
 
-    <head>
-        <link rel="stylesheet" href="my.css">
-        <link rel="icon" type="image/x-icon" href="content/favicon.ico">
-        <title>Bruno Cruz</title>
-    </head>
+    <div class="main">
 
-    <body class="main" style="display: none;">
-
-        <div id="strip_container"></div>
-
-        <div class="row pane" id="main-pane">
-            <div class="column left">
-                <div class="main_menu">
-                    <a id="indexAnchor" class="welcome" onclick="ChangeArea(index)">BC</a>
-                    <div class="menu">
-                        <a id="aboutAnchor" href="#" onclick="ChangeArea(about, aboutAnchor)">about</a><br>
-                        <a id="projectsAnchor" href="#" onclick="ChangeArea(projects, projectsAnchor)">projects</a><br>
-                    </div>
-                    <div class="socials">
-                        <a href="mailto:contact.brunocruz@gmail.com" target="_blank"><img src="content/email.png"></a>
-                        <!-- <a href="https://linkedin.com/in/xbrunocruzx" target="_blank"><img src="content/linkedin.png"></a> -->
-                        <a href="https://github.com/xbdrcx" target="_blank"><img src="content/github.png"></a>
-                        <a href="https://x.com/xbdrcx" target="_blank"><img src="content/twitter.png"></a>
-                    </div>
-                    <div class="lang">
-                        <a href="#" onclick="TurnOnOffBackground()" id="onoff_background">Background OFF</a>
-                    </div>
-                </div>
+        <div class="menu">
+            <h1 onclick="ChangePanel('index')">BC</h1>
+            <ul>
+                <li><a onclick="ChangePanel('about')">about</a></li>
+                <li><a onclick="ChangePanel('projects')">projects</a></li>
+            </ul>
+            <div class="socials">
+                <a href="mailto:contact.brunocruz@gmail.com" target="_blank">
+                    <img src="assets/email.png">
+                </a>
+                <a href="https://www.github.com/xbdrcx" target="_blank">
+                    <img src="assets/github.png">
+                </a>
+                <a href="https://www.x.com/xbdrcx" target="_blank">
+                    <img src="assets/twitter.png">
+                </a>
             </div>
-            
-            <div class="column middle">
-
-                <div class="area" id="index" style="display: inline;">
-                </div>
-
-                <div class="area" id="about">
-                    <div class="area-content">
-                        <h2>Bruno Cruz</h2>
-                        <hr/>
-                        <p>This is a paragraph test in the About area of this website.</p>
-                    </div>
-                </div>
-
-                <div class="area" id="projects">
-                    <div class="area-content">
-                        <h2>Projects</h2>
-                        <hr/>
-                        <p>This is a paragraph test in the About area of this website.</p>
-                    </div>
-                </div>
-
+            <!-- <a id="backgroundbtn" onclick="BackgroundOnOff()">Background OFF</a> -->
+        </div>
+        
+        <div class="content">
+            <div id="index" name="panel">
             </div>
-
-            <div class="column right">
-
+            <div id="about" name="panel">
+                <h2>Bruno Cruz</h2>
+                <hr>
+                <p>This is a test paragraph.</p>
             </div>
-
-            <div class="collumn quote-container" style="color: white; font-family: sans-serif;">
-                <text id="quote-text"></text>
-                <text id="quote-author"></text>
+            <div id="projects" name="panel">
+                <h2>Projects</h2>
+                <hr>
+                <p>This is a test paragraph.</p>
             </div>
-
         </div>
 
-    </body>
+        <div class="footer">
+            <text id="quote-text">Test</text><text id="quote-author"></text>
+        </div>
 
+    </div>
+
+</body>
 </html>
 
-<script src="my.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="script.js"></script>
