@@ -16,6 +16,22 @@ quotes = [
     { quote: '"Inspiration does exist, but it must find you working."', author: "- Pablo Picasso" },
 ];
 
+async function FetchRandomQuote() {
+    const url = 'https://zenquotes.io/api/random';
+    const options = {
+        method: 'GET'
+    };
+    try {
+        const response = await fetch(url, options);
+        const result = await response;
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+FetchRandomQuote()
+
 function CreateBackground() {
     for(i=0; i<numStripes; i++) {
         stripe = document.createElement("div");
