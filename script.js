@@ -18,7 +18,7 @@ quotes = [
 
 function CreateBackground() {
     for(i=0; i<numStripes; i++) {
-        stripe = document.createElement("div");
+        var stripe = document.createElement("div");
         stripe.classList.add("stripe");
         stripe.setAttribute("id", i);
         stripeContainer.append(stripe);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const rand_quote = quotes[rand];
     quote_container.innerHTML = rand_quote["quote"];
     quote_author.innerHTML = rand_quote["author"];
-    CreateBackground();
+    // CreateBackground();
     Array.prototype.forEach.call((panels), function(panel) {
         panel.style.display = "none";
     })
