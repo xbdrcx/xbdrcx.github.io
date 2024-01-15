@@ -1,9 +1,8 @@
-// Inspiration: https://codepen.io/LeonGr/pen/eYoZJB
 const canvas = document.getElementById("canvas")
+const ctx = canvas.getContext("2d")
+
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
-
-const ctx = canvas.getContext("2d")
 
 var stars = []
 var starMaxSize = 2
