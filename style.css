@@ -203,3 +203,17 @@ html {
     }
 
 }
+
+
+
+
+.project-title {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: opacity .2s;
+}
+.project-title:hover {
+    opacity: 0.5;
+}
