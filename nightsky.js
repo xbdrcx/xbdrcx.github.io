@@ -1,10 +1,12 @@
 const divTop = document.createElement("div")
 divTop.classList.add("opener")
+divTop.classList.add("top")
 divTop.style.top = "0px"
 document.getElementById("main").append(divTop)
 
 const divBottom = document.createElement("div")
 divBottom.classList.add("opener")
+divBottom.classList.add("bottom")
 divBottom.style.bottom = "0px"
 document.getElementById("main").append(divBottom)
 

@@ -221,4 +221,15 @@ html {
     position: absolute;
     background-color: black;
     z-index: 999;
+    box-shadow: 2px 2px 100px 8px white;
 }
+
+/* .top {
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.bottom {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+} */
