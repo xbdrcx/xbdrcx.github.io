@@ -233,3 +233,25 @@ html {
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
 } */
+
+a.tooltip span {
+    z-index: 10;
+    display: none; 
+    padding: 14px 20px;
+    margin-top: 60px;
+    margin-left: -160px;
+    width: 300px;
+    line-height: 16px;
+}
+a.tooltip span img {
+    width: 120%;
+    height: 120%;
+    opacity: 1 !important;
+}
+a.tooltip:hover span{
+    display: inline;
+    position: absolute; 
+    color: #EEE;
+    opacity: 1 !important;
+}
+
