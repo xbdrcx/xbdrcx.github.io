@@ -1,3 +1,23 @@
+const divTop = document.createElement("div")
+divTop.classList.add("opener")
+divTop.style.top = "0px"
+document.getElementById("main").append(divTop)
+
+const divBottom = document.createElement("div")
+divBottom.classList.add("opener")
+divBottom.style.bottom = "0px"
+document.getElementById("main").append(divBottom)
+
+var newPos = 0
+
+setInterval(function() {
+    newPos--
+    divTop.style.top = newPos + "px"
+    divBottom.style.bottom = newPos + "px"
+}, 0.0001)
+
+
+
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
 
