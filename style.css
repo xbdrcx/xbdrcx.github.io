@@ -246,12 +246,14 @@ a.tooltip span {
 a.tooltip span img {
     width: 120%;
     height: 120%;
-    opacity: 1 !important;
+    /* border: 1px solid white; */
+    opacity: 0.8;
 }
 a.tooltip:hover span{
     display: inline;
     position: absolute; 
     color: #EEE;
-    opacity: 1 !important;
 }
-
+a.tooltip:hover {
+    opacity: 1;
+}
