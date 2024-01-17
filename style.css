@@ -215,6 +215,10 @@ html {
     opacity: 0.5;
 }
 
+.project-about i {
+    font-weight: bold;
+}
+
 .opener {
     width: 100%;
     height: 50%;
