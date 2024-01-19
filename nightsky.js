@@ -29,7 +29,7 @@ canvas.height = window.innerHeight
 var stars = []
 var starMaxSize = 0.01
 var starGlow = 60
-var numStars = 500
+var numStars = 400
 
 window.addEventListener("resize", function() {
     canvas.width = window.innerWidth
