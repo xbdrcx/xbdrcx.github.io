@@ -118,10 +118,6 @@ html {
     position: absolute;
 }
 
-.content p {
-    margin-top: 20px;
-}
-
 /* div[name='panel'] {
     transition: opacity 0.5s;
 } */
@@ -226,6 +222,18 @@ html {
     background-color: black;
     z-index: 999;
     box-shadow: 2px 2px 100px 8px white;
+}
+
+.project-pane {
+    background-color: rgb(58 58 58 / 50%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.project-pane p {
+    padding: 6px;
 }
 
 /* .top {
