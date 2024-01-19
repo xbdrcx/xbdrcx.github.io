@@ -224,7 +224,6 @@ html {
     height: 50%;
     position: absolute;
     background-color: black;
-    z-index: 999;
     box-shadow: 2px 2px 100px 8px white;
 }
 
