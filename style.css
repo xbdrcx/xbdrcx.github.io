@@ -225,13 +225,16 @@ html {
 }
 
 .project-pane {
-    background-color: rgb(58 58 58 / 50%);
+    background-color: rgb(58 58 58 / 40%);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     margin-top: 10px;
     padding: 10px;
+    transition: background-color .2s;
 }
-
+.project-pane:hover {
+    background-color: rgb(58 58 58 / 60%);
+}
 .project-pane p {
     padding: 6px;
 }
