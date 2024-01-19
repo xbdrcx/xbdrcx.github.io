@@ -198,6 +198,10 @@ html {
         font-size: 12px;
     }
 
+    #projects h2 {
+        text-align: center;
+    }
+
 }
 
 .project-title {
