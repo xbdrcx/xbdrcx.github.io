@@ -12,6 +12,11 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .noselection {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -204,6 +209,30 @@ html {
 
     #projects h2 {
         text-align: center;
+    }
+
+    .menu {
+        padding: 28px;
+    }
+
+    .menu ul {
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .menu ul li {
+        font-size: 24px;
+    }
+
+    .socials a img {
+        margin-top: 10px;
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .opener {
+        width: 150% !important;
     }
 
 }
