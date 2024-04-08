@@ -27,9 +27,10 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
 var stars = []
-var starMaxSize = 0.01
+var starMaxSize = 0.10
 var starGlow = 60
 var numStars = 400
+var randColorEnabled = 0
 
 window.addEventListener("resize", function() {
     canvas.width = window.innerWidth
@@ -44,17 +45,23 @@ class Star {
         this.y = ypos
         this.size = Math.random() * (maxSize - 0.5) + 0.5 
         this.color = "white"
+        this.shadow_color = "#" + Math.floor(Math.random()*16777215).toString(16)
         this.context = context
         this.hasGlow = Math.floor(Math.random() * (2 - 0) - 0)
-
-        this.context.fillStyle = this.color
+        this.hasColor = Math.floor(Math.random() * (2 - 0) - 0)
+        
+        if(randColorEnabled && this.hasColor) {
+            this.context.fillStyle = this.shadow_color
+        } else {
+            this.context.fillStyle = "white"
+        }
         this.context.beginPath()
         this.context.arc(this.x, this.y, this.size, this.size, 4 * Math.PI)
         this.context.fill()
 
         if(this.hasGlow) {
             this.context.shadowBlur = starGlow
-            this.context.shadowColor = "white"
+            this.context.shadowColor = this.shadow_color
             this.context.beginPath()
             this.context.arc(this.x, this.y, this.size + 1, this.size + 1, 4 * Math.PI)
             this.context.fill()
@@ -68,7 +75,11 @@ class Star {
         this.x = this.x + 1
         this.y = this.y + 1
         
-        this.context.fillStyle = this.color
+        if(randColorEnabled && this.hasColor) {
+            this.context.fillStyle = this.shadow_color
+        } else {
+            this.context.fillStyle = "white"
+        }
         this.context.beginPath()
         this.context.arc(this.x, this.y, this.size, this.size, 4 * Math.PI)
         this.context.fill()
@@ -76,7 +87,7 @@ class Star {
         if(this.hasGlow) {
             var randBlur = Math.floor(Math.random() * (starGlow - 2) + 2)
             this.context.shadowBlur = randBlur
-            this.context.shadowColor = "white"
+            this.context.shadowColor = this.shadow_color
             this.context.beginPath()
             this.context.arc(this.x, this.y, this.size + 1, this.size + 1, 4 * Math.PI)
             this.context.fill()
