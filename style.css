@@ -17,6 +17,22 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: darkgray
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .noselection {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
