@@ -1,3 +1,7 @@
+// Nightsky v1.0
+// Developed by Bruno Cruz
+// Github => https://www.github.com/xbdrcx
+
 const divTop = document.createElement("div")
 divTop.classList.add("opener")
 divTop.classList.add("top")
@@ -36,6 +40,11 @@ window.addEventListener("resize", function() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 })
+
+class Sky {
+    // Has Stars
+    // Has a button switch (between Day and Night) 
+}
 
 class Star {
     constructor(xpos, ypos, maxSize, context) {

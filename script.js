@@ -28,8 +28,10 @@ function CreateBackground() {
 function ChangePanel(id) {
     Array.prototype.forEach.call((panels), function(panel) {
         panel.style.display = "none";
+        $("#"+panel.id).fadeOut()
     })
-    document.getElementById(id).style.display = "";
+    // document.getElementById(id).style.display = "";
+    $("#"+id).fadeIn()
 }
 
 function BackgroundOnOff() {
