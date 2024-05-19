@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --main-font: "Roboto", sans-serif;
+    --color-primary: rgb(185, 185, 185);
+}
+
 html {
-    scroll-behavior: smooth;
     overflow: hidden;
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+    color: var(--color-primary);
     background-color: black;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    opacity: 0;
+    animation: fadeIn .2s;
+    animation-fill-mode: forwards;
 }
 
 a {
@@ -56,7 +63,7 @@ a:link, a:visited {
     height: 100%;
     min-height: 100vh;
     background-color: transparent;
-    animation: fadeIn 5s ease;
+    animation: fadeIn 2s ease;
 }
 
 .menu {
@@ -176,108 +183,6 @@ a:link, a:visited {
     margin-bottom: 12px;
 }
 
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes stripeMovement {
-    0% {
-      background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
-    }
-    100% {
-      background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
-    }
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width:1350px){
-    
-    .menu ul, .menu .socials, #backgroundbtn {
-        display: inline-block;
-    }
-
-    .menu .dropdown {
-        display: block;
-    }
-
-    .menu {
-        height: 16%;
-        display: flex;
-    }
-
-    .menu h1 {
-        font-size: 64px;
-        width: 0;
-        height: 74px;
-    }
-
-    .menu ul {
-        margin-top: 12px;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-
-    .menu ul li {
-        font-size: 24px;
-    }
-
-    .menu .socials {
-        display: flex;
-        gap: 12px;
-    }
-
-    .content {
-        margin: 0 !important;
-    }
-
-}
-
-#projects {
-    max-height: 480px;
-}
-
-@media screen and (max-width:800px) {
-    
-    .footer {
-        font-size: 12px;
-    }
-
-    #projects h2 {
-        text-align: center;
-    }
-
-    .menu {
-        padding: 28px;
-    }
-
-    .menu ul {
-        margin-top: 12px;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-
-    .menu ul li {
-        font-size: 24px;
-    }
-
-    .socials a img {
-        margin-top: 10px;
-        width: 24px !important;
-        height: 24px !important;
-    }
-
-    .opener {
-        width: 150% !important;
-    }
-
-}
-
 .project-title {
     font-weight: bold;
     font-size: 18px;
@@ -291,6 +196,10 @@ a:link, a:visited {
 
 .project-about i {
     font-weight: bold;
+}
+
+#projects {
+    max-height: 480px;
 }
 
 .opener {
@@ -348,4 +257,77 @@ a.tooltip:hover span{
 }
 a.tooltip:hover {
     opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1350px){
+    .menu ul, .menu .socials, #backgroundbtn {
+        display: inline-block;
+    }
+    .menu .dropdown {
+        display: block;
+    }
+    .menu {
+        height: 16%;
+        display: flex;
+    }
+    .menu h1 {
+        font-size: 64px;
+        width: 0;
+        height: 74px;
+    }
+    .menu ul {
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .menu ul li {
+        font-size: 24px;
+    }
+    .menu .socials {
+        display: flex;
+        gap: 12px;
+    }
+    .content {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .footer {
+        font-size: 12px;
+    }
+    #projects h2 {
+        text-align: center;
+    }
+    .menu {
+        padding: 28px;
+    }
+    .menu ul {
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .menu ul li {
+        font-size: 24px;
+    }
+    .socials a img {
+        margin-top: 10px;
+        width: 24px !important;
+        height: 24px !important;
+    }
+    .opener {
+        width: 150% !important;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes stripeMovement {
+    0% { background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px; }
+    100% { background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px; }
 }
