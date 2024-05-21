@@ -1,29 +1,6 @@
 // Nightsky v1.0
 // Developed by Bruno Cruz
 // Github => https://www.github.com/xbdrcx
-
-const divTop = document.createElement("div")
-divTop.classList.add("opener")
-divTop.classList.add("top")
-divTop.style.top = "0px"
-document.getElementById("main").append(divTop)
-
-const divBottom = document.createElement("div")
-divBottom.classList.add("opener")
-divBottom.classList.add("bottom")
-divBottom.style.bottom = "0px"
-document.getElementById("main").append(divBottom)
-
-var newPos = 0
-
-setInterval(function() {
-    newPos--
-    divTop.style.top = newPos + "px"
-    divBottom.style.bottom = newPos + "px"
-}, 0.0001)
-
-
-
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext("2d")
 
@@ -33,7 +10,7 @@ canvas.height = window.innerHeight
 var stars = []
 var starMaxSize = 0.10
 var starGlow = 60
-var numStars = 400
+var numStars = 300
 var randColorEnabled = 0
 
 window.addEventListener("resize", function() {
