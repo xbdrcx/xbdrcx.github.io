@@ -1,0 +1,85 @@
+{
+    "detector": {
+        "title": "HaarDetector",
+        "abouten": "HaarDetector is a piece of UI software capable of performing detections on an Image, Video or Camera feed. This application uses Haar Cascade as a method of detection.",
+        "aboutpt": "HaarDetector é um software com interface-gráfica capaz de executar detecções em Imagem, Video ou num feed de Camera. A aplicação usa um método de detecção chamado Haar Cascade.",
+        "technologies": ["Software", "Python", "PyQt6", "AI", "ComputerVision"],
+        "version": "2.0",
+        "platforms": ["Windows"],
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/haardetector"
+            }
+        ],
+        "image": "assets/detector.png"
+    },
+    "lightshow": {
+        "title": "Lightshow",
+        "abouten": "Party light-system simulator",
+        "aboutpt": "Simulador de sistema de luzes de festa",
+        "technologies": ["Web", "Javascript", "Bootstrap"],
+        "version": "2.1.1",
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/lightshow-js"
+            },
+            {
+                "title": "Live <i class='fa-solid fa-star-of-life'></i>",
+                "url": "projects/lightshow"
+            }
+        ],
+        "image": "assets/lightshow.png"
+    },
+    "nightsky": {
+        "title": "Nightsky",
+        "abouten": "Nightsky is a simple simulation of a sky with stars using the CanvasAPI.",
+        "aboutpt": "Nightsky é uma simples simulação de um céu estrelado criado com CanvasAPI.",
+        "technologies": ["Web", "Javascript", "Canvas"],
+        "version": "",
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/nightsky-js"
+            },
+            {
+                "title": "Live <i class='fa-solid fa-star-of-life'></i>",
+                "url": "projects/nightsky"
+            }
+        ],
+        "image": "assets/nightsky.png"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "abouten": "Portfolio is a website with the purpose of sharing about my developer experience and personal projects.",
+        "aboutpt": "Portfolio é um website com o propósito de partilhar a cerca da minha experiência como desenvolvedor e projetos pessoais.",
+        "technologies": ["Web", "Javascript", "ThreeJS", "jQuery"],
+        "version": "",
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/xbdrcx.github.io"
+            }
+        ],
+        "image": "assets/portfolio.png"
+    },
+    "mnistjs": {
+        "title": "MNIST JS",
+        "abouten": "MNIST JS is a simple web application with the sole objective of showing out the capability of Machine Learning algorithms to recognize drawn digits and how to implement it in a web context. This application uses a Machine Learning model trained on the famous MNIST dataset, a collection of 70000 images of drawn digits from 0 to 9.",
+        "aboutpt": "MNIST JS é uma simples aplicação web com o objetivo de mostrar a capacidade dos algoritmos Machine Learning de reconhecer digitos desenhados e como implementá-lo em contexto web. Esta aplicação usa um model de Machine Learning treinado com o famoso dataset MNIST, uma coleção de 70000 imagens de digitos desenhados de 0 a 9. ",
+        "technologies": ["Web", "Javascript", "Canvas", "AI", "TensorflowJS"],
+        "version": "",
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/mnist-js"
+            },
+            {
+                "title": "Live <i class='fa-solid fa-star-of-life'></i>",
+                "url": "projects/mnistjs"
+            }
+        ],
+        "image": "assets/mnistjs.png"
+    }
+}

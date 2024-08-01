@@ -1,0 +1,14 @@
+html {
+    overflow: hidden;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background-color: black;
+    transition: background-color 5s;
+}
+

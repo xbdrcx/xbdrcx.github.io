@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno Cruz's Portfolio, sharing developer experience and personal projects">
+    <meta name="keywords" content="AI, Artificial Intelligence, Data Science, Bruno Cruz, Cruz, Portfolio, Portugal, Portuguese, English, Lisbon, Web Development, Web Dev, Javascript, Python, ThreeJS">
+    <meta name="author" content="Bruno Cruz">
+    <title>Bruno Cruz</title>
+</head>
+<body class="noselection scroll-box">
+
+    <div class="wrapper">
+        <nav>
+            <a onclick="fadePanel('#home')"><h1>BC</h1></a>
+            <div class="navitems">
+                <a onclick="fadePanel('#about')" id="menu-about">about</a>
+                <a onclick="fadePanel('#projects')" id="menu-projects">projects</a>
+                <!-- <a onclick="fadePanel('#articles')" id="menu-articles">articles</a> -->
+                <!-- <a onclick="fadePanel('#books')" id="menu-books">books</a> -->
+            </div>
+            <div class="socials">
+                <a href="https://www.github.com/xbdrcx" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.x.com/xbdrcx" target="_blank" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="mailto: contact.brunocruz@gmail.com" title="E-mail"><i class="fa fa-envelope"></i></a>
+                <a href="https://buymeacoffee.com/xbrunocruzx" target="_blank" title="BuyMeACoffee"><i class="fa-solid fa-mug-saucer"></i></a>
+            </div>
+            <div class="languages">
+                <a onclick="changeLanguage(0)" title="English" id="lang-en">EN</a>
+                <a onclick="changeLanguage(1)" title="Portuguese" id="lang-pt">PT</a>
+            </div>
+            <div class="media">
+                <a onclick="play()" class="experience-button" title="Play Music"><i name="play-icon" class="fa-solid fa-play"></i></a>
+                <a onclick="background()" class="experience-button" title="Turn Background OFF"><i name="background-icon" class="fa-regular fa-image"></i></a>
+            </div>
+            <div class="nav-mobile">
+                <div class="mobile-languages">
+                    <a onclick="changeLanguage(0)" title="English" name="lang-en">EN</a>
+                    <a onclick="changeLanguage(1)" title="Portuguese" name="lang-pt">PT</a>
+                </div>
+                <div class="mobile-media">
+                    <a onclick="play()" class="experience-button" title="Play Music"><i name="play-icon" class="fa-solid fa-play"></i></a>
+                    <a onclick="background()" class="experience-button" title="Turn Background OFF"><i name="background-icon" class="fa-regular fa-image"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+
+            <section id="about" style="display: none">
+                <div class="left">
+                    <h1 id="about-title">About</h1>
+                    <h4 id="about-description">A bit about me and my experience</h4>
+                </div>
+                <div class="vertical-line"></div>
+                <hr>
+                <div class="right">
+                    <h1 id="about-greetings">Hi 👋 I'm Bruno</h1>
+                    <h4 id="about-welcome">Welcome to my portfolio</h4>
+                    <ul>
+                        <li class="xp" id="course">Programming Course @ <a href="https://escoladigital.com/" target="_blank">Escola Profissional de Tecnologia Digital</a></li>
+                        <li class="xp" id="barreiro">[Intership] Help Desk @ <a href="https://www.cm-barreiro.pt/" target="_blank">Barreiro's Town Hall</a></li>
+                        <li class="xp" id="kcs_intern">[Intership] Web Developer @ <a href="https://www.kcsit.pt/" target="_blank">KCSiT</a></li>
+                        <li class="xp" id="kcs">Web Developer (2+ years) @ <a href="https://kcsit.pt/" target="_blank">KCSiT</a></li>
+                        <li class="xp" id="pprojects">Personal Projects @ <a onclick="fadePanel('#projects')">projects</a></li>
+                    </ul>
+                    <!-- <b id="certs" style="margin-bottom: 12px; margin-top: 18px;">Certifications</b>
+                    <ul>
+                        <li class="xp" id=""><a href="https://pt.eitca.org/certification/eitca-ai-artificial-intelligence-academy/" target="_blank">EITCA/AI Artificial Intelligence</a></li>
+                        <li class="xp" id=""><a href="https://www.coursera.org/professional-certificates/ibm-data-science?action=enroll" target="_blank">IBM Data Science Professional Certificate</a></li>
+                    </ul> -->
+                    <!-- <p style="margin-top: 20px;"><b id="learning-title">Currently studying: </b><text id="learning">Machine Learning, ThreeJS</text></p> -->
+                    <p style="font-size: 32px; margin-top: 20px;"><a href="https://javascript.com" target="_blank" title="Javascript" class="fa-brands fa-js tech-icon" style="color: #FFD43B;"></a> | <a href="https://python.org" target="_blank" title="Python" class="fa-brands fa-python tech-icon" style="color: #74C0FC;"></a> | <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" title="Artificial Intelligence" class="fa-solid fa-brain tech-icon" style="color: #63E6BE;"></a></p>
+                </div>
+            </section>
+        
+            <section id="projects" style="display: none">
+                <div class="left">
+                    <h1 id="projects-title">Projects</h1>
+                    <h4 id="projects-description">Some of my personal projects</h4>
+                </div>
+                <div class="vertical-line"></div>
+                <hr>
+                <div class="right">
+                    <select id="technologiesDropdown" oninput="filterTable()">
+                    </select>
+                    <i style="margin-left: 10px; margin-bottom: 5px; font-size: 15px;" id="table-info">Click table item for details</i>
+                    <div class="tableContainer">
+                        <table id="projectsTable">
+                            <tr><th>Name</th><th>Technologies</th></tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- <section id="articles" style="display: none">
+                <div class="left">
+                    <h1 id="projects-title">Articles</h1>
+                    <h4 id="projects-description">Sharing information on various topics</h4>
+                </div>
+                <div class="vertical-line"></div>
+                <hr>
+                <div class="right">
+                    
+                </div>
+            </section> -->
+
+        </main>
+        
+        <footer>
+            <text id="quote">This is a test quote. - Bruno Cruz</text>
+            <span id="clock">00:00:00</span>
+        </footer>
+
+    </div>
+
+    <div class="project-panel" id="projectpanel" style="display: none;">
+        <div class="project-top">
+            <i onclick="closeProjectPanel()" class="fa-solid fa-x"></i>
+        </div>
+        <div class="project-left">
+            <h1 id="projectPanel-title"></h1>
+            <h4 id="projectPanel-technologies" style="font-style: italic;"></h4>
+            <span id="project-version-container"><span id="projectPanel-version-label">Version </span><span id="projectPanel-version"></span></span>
+            <div style="display: none;">
+                <span id="project-platform-container"><span id="projectPanel-platform-label">Platform(s) </span><span id="projectPanel-platforms"></span></span>
+            </div>
+            <text id="projectPanel-description"></text>
+            <div><h4><span id="bugsuggestion" style="font-size: 12px; margin-top: 20px;">Any Bug or Improvement Suggestion, consider contact via </span><a style="color: lightgrey; font-size: 12px" href="mailto:contact.brunocruz@gmail.com">e-mail</a></h4></div>
+        </div>
+        <div class="project-right" id="project-right">
+        </div>
+        <div class="project-bottom" id="project-bottom">
+        </div>
+    </div>
+
+</body>
+</html>
+<script type="module" src="main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>

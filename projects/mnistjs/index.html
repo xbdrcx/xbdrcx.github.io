@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST JS</title>
+</head>
+<body>
+    <div class="splash">
+        <img src="splash.png" style="border-radius: 24px;" width="24" height="24">
+    </div>
+    <div class="container">
+        <div class="info">
+            <h1 class="title">MNIST JS</h1>
+            <text><a href="https://en.wikipedia.org/wiki/MNIST_database" target="_blank">MNIST</a> is a large database of handwritten digits from 0 to 9. It is commonly used for training purposes of various image preprocessing systems.</text>
+            <text>To test the machine learning model trained with MNIST, <b>draw a digit in the black board.</b></text>
+        </div>
+        <div style="display: flex; flex-direction: column; text-align: center;">
+            <canvas id="board"></canvas>
+        </div>
+        <span id="predtext">Prediction: <text id="pred">2</text></span>
+    </div>
+    <footer>
+        <text>Made by <a href="https://xbdrcx.github.io" target="_blank">Bruno Cruz</a></text>
+    </footer>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="module" src="mnist.js"></script>
+<script>
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            document.getElementsByClassName("splash")[0].style.opacity = 0;
+            setTimeout(function() {
+                document.getElementsByClassName("splash")[0].style.display = "none";
+            }, 500)
+        }, 500)
+    })
+</script>
