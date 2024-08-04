@@ -410,6 +410,7 @@ table tr:not(:first-child):hover {
     transition: opacity .2s;
     opacity: 1;
     text-decoration: none;
+    color: white;
 }
 
 .tech-icon:hover {
