@@ -320,7 +320,7 @@ function openProjectPanel(id) {
     document.getElementById("project-platform-container").style.visibility = "hidden"
   }
   let img_elem = document.createElement("img")
-  img_elem.alt = projects_data[id].title
+  img_elem.alt = "project preview"
   img_elem.onerror = () => { img_elem.src = 'assets/img_placeholder.webp' }
   img_elem.src = projects_data[id].image
   document.getElementById("project-right").appendChild(img_elem)
