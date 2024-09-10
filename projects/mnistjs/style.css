@@ -104,28 +104,40 @@ body {
 }
 
 footer {
-    width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
+    padding: 18px;
 }
 
-footer text {
-    padding: 10px;
-    float: right;
+footer a {
+    text-decoration: none;
 }
 
-footer text a, .info a {
+footer a h1 {
+    border: 2px solid white;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+footer a h1:hover {
+    opacity: 0.6;
+    transition: opacity .2s;
+}
+
+.info a {
     text-decoration: none;
     color: grey;
     transition: color .2s;
 }
 
-footer text a:hover, .info a:hover {
+.info a:hover {
     color: rgb(206, 206, 206);
     transition: color .2s;
 }
-
 
 /* ANIMATIONS */
 @keyframes fadeIn {
