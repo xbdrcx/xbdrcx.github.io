@@ -9,11 +9,9 @@ document.body.appendChild(renderer.domElement)
 const sphere_colors = [
   "#42ecf5",
   "#a833cc",
-  "#e3226c",
   "#f70a0a",
   "#faf60f",
   "#f2f2f2",
-  "#4400ff",
 ]
 
 const geometry = new THREE.SphereGeometry(15, 42, 20)
