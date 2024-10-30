@@ -8,7 +8,7 @@ document.body.appendChild(renderer.domElement)
 
 const sphere_colors = [
   "#42ecf5",
-  "#a833cc",
+  "#8616a8",
   "#f70a0a",
   "#faf60f",
   "#f2f2f2",
