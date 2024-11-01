@@ -230,6 +230,7 @@ function changeLanguage(id) {
 
         document.getElementById("about-greetings").innerHTML = "Hi 👋 I'm Bruno"
         document.getElementById("about-welcome").innerHTML = "Welcome to my portfolio"
+        document.getElementById("about-desc").innerHTML = "Connected to the tech world since I remember. Books, music and coffee. Currently studying machine learning and data science."
 
         // document.getElementById("certs").innerHTML = "Certifications"
 
@@ -269,6 +270,7 @@ function changeLanguage(id) {
 
         document.getElementById("about-greetings").innerHTML = "Olá 👋 Sou o Bruno"
         document.getElementById("about-welcome").innerHTML = "Bem-vindo ao meu portfolio"
+        document.getElementById("about-desc").innerHTML = "Ligado ao mundo da tecnologia desde que me lembro. Livros, música e café. Atualmente a estudar machine learning e ciência de dados."
 
         // document.getElementById("certs").innerHTML = "Certificações"
 
