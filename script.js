@@ -230,7 +230,7 @@ function changeLanguage(id) {
 
         document.getElementById("about-greetings").innerHTML = "Hi 👋 I'm Bruno"
         document.getElementById("about-welcome").innerHTML = "Welcome to my portfolio"
-        document.getElementById("about-desc").innerHTML = "Connected to the tech world since I remember. Books, music and coffee. Currently studying machine learning and data science."
+        document.getElementById("about-desc").innerHTML = "Connected to the tech world since I remember. Books, music and coffee. Currently studying deep learning and data science."
 
         // document.getElementById("certs").innerHTML = "Certifications"
 
