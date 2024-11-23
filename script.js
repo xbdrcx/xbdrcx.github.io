@@ -270,7 +270,7 @@ function changeLanguage(id) {
 
         document.getElementById("about-greetings").innerHTML = "Olá 👋 Sou o Bruno"
         document.getElementById("about-welcome").innerHTML = "Bem-vindo ao meu portfolio"
-        document.getElementById("about-desc").innerHTML = "Ligado ao mundo da tecnologia desde que me lembro. Livros, música e café. Atualmente a estudar machine learning e ciência de dados."
+        document.getElementById("about-desc").innerHTML = "Desde sempre ligado ao mundo da tecnologia. Livros, música e café. Atualmente a estudar deep learning e data science."
 
         // document.getElementById("certs").innerHTML = "Certificações"
 
