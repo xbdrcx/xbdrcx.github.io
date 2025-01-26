@@ -245,7 +245,7 @@ function changeLanguage(id) {
         document.getElementById("projectPanel-version-label").innerHTML = "Version "
         document.getElementById("projectPanel-platform-label").innerHTML = "Platform(s) "
 
-        document.getElementById("bugsuggestion").innerHTML = "Any Bug or Improvement Suggestion, consider contacting via "
+        // document.getElementById("bugsuggestion").innerHTML = "Any Bug or Improvement Suggestion, consider contacting via "
 
       } else {
         // Portuguese
@@ -285,7 +285,7 @@ function changeLanguage(id) {
         document.getElementById("projectPanel-version-label").innerHTML = "Versão "
         document.getElementById("projectPanel-platform-label").innerHTML = "Plataforma(s) "
 
-        document.getElementById("bugsuggestion").innerHTML = "Algum Bug or Sugestão de Melhoramento, considere contactar via "
+        // document.getElementById("bugsuggestion").innerHTML = "Algum Bug or Sugestão de Melhoramento, considere contactar via "
 
       }
       $(".wrapper").fadeIn()
