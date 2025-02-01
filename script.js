@@ -12,7 +12,6 @@ var project_platforms = document.getElementById("projectPanel-platforms")
 
 const quotes = [
   "All our dreams can come true, if we have the courage to pursue them. - Walt Disney",
-  "The only source of knowledge is experience. - Albert Einstein",
   "Attitude is a little thing that makes a big difference. - Winston Churchill",
   "To know, is to know that you know nothing. - Socrates",
   "The good life is one inspired by love and guided by knowledge. - Bertrand Russell",
