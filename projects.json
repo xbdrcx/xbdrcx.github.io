@@ -1,4 +1,23 @@
-{
+{    
+    "itjobsanalyzer": {
+        "title": "ITJobs Analyzer",
+        "abouten": "",
+        "aboutpt": "",
+        "technologies": ["Python", "Streamlit", "Data Visualization", "AI"],
+        "version": "1.0",
+        "platforms": ["Web"],
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/itjobs-analysis"
+            },
+            {
+                "title": "Live <i class='fa-solid fa-star-of-life'></i>",
+                "url": "https://itjobs.streamlit.app"
+            }
+        ],
+        "image": "assets/itjobsanalyzer.png"
+    },
     "detector": {
         "title": "HaarDetector",
         "abouten": "HaarDetector is a piece of UI software capable of performing detections on an Image, Video or Camera feed. This application uses Haar Cascade as a method of detection.",
