@@ -4,8 +4,7 @@
         "abouten": "",
         "aboutpt": "",
         "technologies": ["Python", "Streamlit", "Data Visualization", "AI"],
-        "version": "1.0",
-        "platforms": ["Web"],
+        "version": "1.0.0",
         "links": [
             {
                 "title": "Repository <i class='fa-brands fa-github'></i>",
