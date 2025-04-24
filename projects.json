@@ -17,6 +17,24 @@
         ],
         "image": "assets/itjobsanalyzer.png"
     },
+    {
+        "title": "Toolkit",
+        "abouten": "",
+        "aboutpt": "",
+        "technologies": ["React", "Vite", "TypeScript"],
+        "version": "1.0.0",
+        "links": [
+            {
+                "title": "Repository <i class='fa-brands fa-github'></i>",
+                "url": "https://www.github.com/xbdrcx/toolkit"
+            },
+            {
+                "title": "Live <i class='fa-solid fa-star-of-life'></i>",
+                "url": "/toolkit"
+            }
+        ],
+        "image": "assets/toolkit.png"
+    },
     "detector": {
         "title": "HaarDetector",
         "abouten": "HaarDetector is a piece of UI software capable of performing detections on an Image, Video or Camera feed. This application uses Haar Cascade as a method of detection.",
